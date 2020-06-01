@@ -1,4 +1,4 @@
-# gsp-web
+# lash-web
 
 ## Project setup
 ```
