@@ -1,0 +1,57 @@
+
+body, div, a, p, i, span, li, ul, ol, h1, h2, h3, h4, h5, h6 {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-size: 13px;
+  color: #333;
+  background-color: #FFF;
+}
+
+input, button {
+  outline: none;
+}
+
+li, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  &:visited, &:hover, &:active {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:hover {
+    font-weight: 700;
+  }
+}
+
+// layout
+.row {
+  display: flex;
+  flex-direction: row;
+
+  .col {
+    flex: 1;
+
+    &.fit-content {
+      flex: 0;
+    }
+  }
+}
+
+
+$primary-color: #0F4C81;
+
+// button style
+.btn-primary {
+  background-color: $primary-color;
+  color: #FFF;
+}
